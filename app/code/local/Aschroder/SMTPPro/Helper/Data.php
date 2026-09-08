@@ -98,7 +98,7 @@ class Aschroder_SMTPPro_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getAmazonSESPrivateKey($storeId = null)
     {
-        return Mage::getStoreConfig('smtppro/general/ses_private_key', $storeId);
+        return Mage::helper('core')->decrypt(Mage::getStoreConfig('smtppro/general/ses_private_key', $storeId));
     }
 
     public function getAmazonSESRegion($storeId = null)
@@ -113,7 +113,7 @@ class Aschroder_SMTPPro_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getGoogleAppsPassword($storeId = null)
     {
-        return Mage::getStoreConfig('smtppro/general/googleapps_gpassword', $storeId);
+        return Mage::helper('core')->decrypt(Mage::getStoreConfig('smtppro/general/googleapps_gpassword', $storeId));
     }
 
 
@@ -124,7 +124,7 @@ class Aschroder_SMTPPro_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getSendGridPassword($storeId = null)
     {
-        return Mage::getStoreConfig('smtppro/general/sendgrid_password', $storeId);
+        return Mage::helper('core')->decrypt(Mage::getStoreConfig('smtppro/general/sendgrid_password', $storeId));
     }
 
     public function getMailUpUsername($storeId = null)
@@ -134,7 +134,7 @@ class Aschroder_SMTPPro_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getMailUpPassword($storeId = null)
     {
-        return Mage::getStoreConfig('smtppro/general/mailup_password', $storeId);
+        return Mage::helper('core')->decrypt(Mage::getStoreConfig('smtppro/general/mailup_password', $storeId));
     }
 
     public function getSMTPSettingsHost($storeId = null)
@@ -154,7 +154,7 @@ class Aschroder_SMTPPro_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getSMTPSettingsPassword($storeId = null)
     {
-        return Mage::getStoreConfig('smtppro/general/smtp_password', $storeId);
+        return Mage::helper('core')->decrypt(Mage::getStoreConfig('smtppro/general/smtp_password', $storeId));
     }
 
     public function getSMTPSettingsSSL($storeId = null)

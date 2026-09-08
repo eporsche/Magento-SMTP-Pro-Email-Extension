@@ -191,17 +191,17 @@
             <general>
                 <option>disabled</option>
                 <googleapps_email></googleapps_email>
-                <googleapps_gpassword backend_model="adminhtml/system_config_backend_encrypted" />
+                <googleapps_gpassword></googleapps_gpassword>
                 <sendgrid_email></sendgrid_email>
-                <sendgrid_password backend_model="adminhtml/system_config_backend_encrypted" />
+                <sendgrid_password></sendgrid_password>
                 <mailup_email></mailup_email>
-                <mailup_password backend_model="adminhtml/system_config_backend_encrypted" />
+                <mailup_password></mailup_password>
                 <ses_access_key></ses_access_key>
-                <ses_private_key backend_model="adminhtml/system_config_backend_encrypted" />
+                <ses_private_key></ses_private_key>
                 <ses_region>us-east-1</ses_region>
                 <smtp_authentication></smtp_authentication>
                 <smtp_username></smtp_username>
-                <smtp_password backend_model="adminhtml/system_config_backend_encrypted" />
+                <smtp_password></smtp_password>
                 <smtp_host></smtp_host>
                 <smtp_port>25</smtp_port>
                 <smtp_ssl></smtp_ssl>
